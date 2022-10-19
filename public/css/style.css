@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Edu+VIC+WA+NT+Beginner&family=Heebo:wght@100&family=Kanit:wght@600&family=Montserrat&family=Mulish:wght@300&family=Prompt:ital,wght@0,200;1,300&family=Raleway:ital,wght@1,200&family=Source+Sans+Pro:ital,wght@0,300;1,300&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blackColor: #000;
+    --whiteColor:#fff;
+    --grayColor: #c7c5c5;
+    --darkColor: #201f1f;
+    --shadowDarkColor: rgba(0, 0, 0, 0.25);
+    --blueColor:#0250c5;
+    --shockPinkColor:#d43f8d;
+    --transparentDarkColor: rgba(0, 0, 0, 0.658);
+    --redColor: red;     
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-image: linear-gradient(to top, var(--blueColor) 0%, var(--shockPinkColor) 100%);    
+}
+
+header{
+    display: inline-block;
+    width: 100vw;
+    min-height: 33vh;
+    text-align: center;
+    justify-content: center;
+}
+
+header .icon-container{
+    margin: auto;
+}
+
+header .icon-container #icon-header{
+    min-width: 8vw;
+    min-height: 10vh;
+}
+
+header .user-container{
+    display: flex;
+    justify-content: center;
+}
+
+header .user-container .menu-user ul{
+    list-style: none;
+    display: flex;
+    margin: 5px;
+}
+
+header .user-container .menu-user ul li{
+    margin: 5px;
+    color: var(--whiteColor);
+}
+
+header .user-container .menu-user ul li a{
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-weight: bold;
+    transition: 0.6s ease-in-out;
+}
+
+header .user-container .menu-user ul li a:hover{
+    color: var(--blueColor);
+    transition: 0.6s ease-in-out;
+}
+
+header .search-container form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+}
+
+header .search-container form label{
+    position: relative;
+}
+
+header .search-container form #search-field{
+    background-color: var(--whiteColor);
+    border: 1px solid;
+    border-radius: 16px;
+    border: none;
+    box-shadow: inset 0px 0px 6px;
+    width: 20vw;
+    height: 3.5vh;
+    padding-left: 48px;
+    outline: none;
+
+}
+
+header .search-container form #search-field:hover{
+    background-color: var(--whiteColor);
+    border: 1px solid var(--grayColor);
+}
+
+header .search-container form #search-btn{
+    height: 4vh;
+    width: 3vw;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 999;
+    left: 0px;    
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+header .search-container form #search-btn:hover i{
+    color: var(--blueColor);
+    transition: 0.6s ease-in-out;
+}
+
+
+
+
+
+
+
+footer{
+    display: inline-block;
+    width: 100vw;
+    min-height: 37.7vh;
+    text-align: center;
+    justify-content: center;
+    color: var(--whiteColor);
+    padding: 20px;
+}
+
+footer .social-networks{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-networks div{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 50%;
+    margin: 10px;
+    width: 3vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+footer .social-networks div:hover{
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    transition: 0.6s ease-in-out;
+}
+
+footer .social-networks div:hover i,
+footer .social-networks a:hover i{
+    color: var(--blackColor);
+    transition: 0.6s ease-in-out;
+}
+
+footer .social-networks a{
+    text-decoration: none;
+    color: var(--whiteColor);
+    margin: 5px;
+    transition: 0.6s ease-in-out;
+}
+
+footer .social-networks a i{
+    font-size: 1.7em;
+    color: var(--whiteColor);
+}
+
+footer .social-networks a:hover i{
+    color: var(--blackColor);
+    transition: 0.6s ease-in-out;
+}
+
+footer .local div{
+    margin: 10px;
+}
+

@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Edu+VIC+WA+NT+Beginner&family=Heebo:wght@100&family=Kanit:wght@600&family=Montserrat&family=Mulish:wght@300&family=Prompt:ital,wght@0,200;1,300&family=Raleway:ital,wght@1,200&family=Source+Sans+Pro:ital,wght@0,300;1,300&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --blackColor: #000;
+  --whiteColor:#fff;
+  --grayColor: #c7c5c5;
+  --darkColor: #201f1f;
+  --shadowDarkColor: rgba(0, 0, 0, 0.25);
+  --blueColor:#0250c5;
+  --shockPinkColor:#d43f8d;
+  --transparentDarkColor: rgba(0, 0, 0, 0.658);
+  --redColor: red;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+main .container{
+    background-color: var(--transparentDarkColor);
+    color: var(--whiteColor);
+    border-radius: 20px;
+    width: 17vw;
+    height: 30vh;
+    padding: 20px;
+}
+
+main .container .container-title,
+main .container .conetainer-input,
+main .container .container-btn{
+    margin: 25px;
+    text-align: center;
+}
+
+main .container .container-input div,
+main .container .container-input div label{
+    margin: 10px;
+}
+
+main .container .container-input input{
+    border: 1px solid var(--blueColor);
+    box-shadow: inset 0px 0px 6px;
+    border-radius: 8px;
+    padding: 6px;
+    outline: none;
+    width: 10vw;
+    height: 2.6vh;
+}
+
+main .container .container-input label > i:hover{
+    color: var(--blueColor);
+}
+
+main .container .container-input input:is(:hover, :focus){
+    border: 2px solid var(--shockPinkColor);
+    color: var(--shockPinkColor);
+}
+
+main .container .container-btn button{
+    background-color: var(--darkColor);
+    color: var(--whiteColor);
+    border: 1px solid var(--blueColor);
+    border-radius: 10px;
+    width: 6em;
+    height: 2em;
+    margin: 5px;
+    transition: 0.6s ease-in-out;
+}
+
+main .container .container-btn button:hover{
+    background-color: var(--shockPinkColor);
+    color: var(--whiteColor);
+    transition: 0.6s ease-in-out;
+}
